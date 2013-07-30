@@ -1,7 +1,11 @@
+// Copyright 2013 - by Jim Lawless
+// License: MIT / X11
+// See: http://www.mailsend-online.com/license2013.php
+
 package main
 
 import (
-  "cfg"
+	"cfg"
 	"fmt"
 	"log"
 )
