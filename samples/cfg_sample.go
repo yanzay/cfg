@@ -5,7 +5,7 @@
 package main
 
 import (
-	"cfg"
+	"github.com/jimlawless/cfg"
 	"fmt"
 	"log"
 )
