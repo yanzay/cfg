@@ -28,7 +28,7 @@
 package cfg
 
 import (
-  "errors"
+	"errors"
 	"os"
 	"regexp"
 	"strings"
@@ -39,6 +39,13 @@ var pat = "[#].*\\n|\\s+\\n|\\S+[=]|.*\n"
 
 func init() {
 	re, _ = regexp.Compile(pat)
+}
+
+// LoadNewMap creates and returns a new map reading filename parameter
+func LoadNewMap(filename string) (map[string]string, error) {
+	returnMap := make(map[string]string)
+	err := Load(filename, returnMap)
+	return returnMap, err
 }
 
 // Load adds or updates entries in an existing map with string keys
